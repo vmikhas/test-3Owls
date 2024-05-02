@@ -1,0 +1,131 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &:hover,
+  &:focus {
+    .card__info {
+      display: flex;
+    }
+  }
+
+  @media(max-width: $desktop-width) {
+    &:active {
+      .card__info {
+        display: flex;
+      }
+    }
+  }
+}
+
+.card__sale {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 0 4px 0 5px;
+  color: $red;
+  background-color: $white;
+
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  z-index: 1;
+}
+
+.card__wrap {
+  margin-bottom: 9px;
+  position: relative;
+}
+
+.card__link-img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.card__button {
+  width: 26px;
+  height: 22px;
+  padding: 0;
+  position: absolute;
+  top: 90.4%;
+  right: 14px;
+  background-color: transparent;
+  border: none;
+}
+
+.card__favorite {
+  width: 26px;
+  height: 22px;
+  fill: currentColor;
+  --color-like: #ffffff;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+
+  &--active {
+    color: $white;
+    --color-like: #d01345;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    --color-like: #d01345;
+  }
+}
+
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.card__link-title {
+  text-decoration: none;
+  color: $dark-grey;
+  margin-bottom: 12px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.card__title {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 126%;
+  letter-spacing: 0.04em;
+}
+
+.card__price {
+  display: flex;
+  gap: 9px;
+}
+
+.card__old-price {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 200%;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.card__new-price {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  color: $red;
+}

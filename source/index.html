@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/FuturaPT-Book.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/FuturaPT-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/FuturaPT-Heavy.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+  <body class="body">
+
+    <main class="main-container">
+      <section class="catalog">
+        <div class="catalog__container container">
+          <h1 class="visually-hidden">Каталог товаров</h1>
+          <ul class="catalog__list">
+            <li class="catalog__item card">
+              <span class="card__sale">-25%</span>
+              <div class="card__wrap">
+                <a class="card__link-img" href="#">
+                  <picture>
+                    <source srcset="images/catalog1@1x.webp 1x, images/catalog1@2x.webp 2x" type="image/webp" width="332" height="444">
+
+                    <img class="card__image" src="images/catalog1@1x.png" srcset="images/catalog1@2x.png 2x" width="332" height="444" loading="lazy" alt="Вельветовый пуховик">
+                  </picture>
+                </a>
+                <button class="card__button" type="button" aria-label="Добавить в избранное">
+                  <svg class="card__favorite" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#like-off"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card__wrapper">
+                <a class="card__link-title" href="#">
+                  <h2 class="card__title">Вельветовый пуховик</h2>
+                </a>
+                <div class="card__price">
+                  <p class="card__old-price">7 999 руб.</p>
+                  <p class="card__new-price">1 339 руб.</p>
+                </div>
+                <div class="card__info info">
+                  <div>
+                    <p class="info__title">Размеры в наличии:</p>
+                    <ul class="info__list">
+                      <li class="info__item">S</li>
+                      <li class="info__item">M</li>
+                      <li class="info__item">L</li>
+                      <li class="info__item">XL</li>
+                      <li class="info__item">XXL</li>
+                    </ul>
+                  </div>
+                  <a class="info__button button" href="#">Купить</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__item card">
+              <span class="card__sale">-25%</span>
+              <div class="card__wrap">
+                <a class="card__link-img" href="#">
+                  <picture>
+                    <source srcset="images/catalog2@1x.webp 1x, images/catalog2@2x.webp 2x" type="image/webp" width="332" height="444">
+
+                    <img class="card__image" src="images/catalog2@1x.png" srcset="images/catalog2@2x.png 2x" width="332" height="444" loading="lazy" alt="Вельветовый пуховик">
+                  </picture>
+                </a>
+                <button class="card__button" type="button" aria-label="Добавить в избранное">
+                  <svg class="card__favorite" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#like-off"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card__wrapper">
+                <a class="card__link-title" href="#">
+                  <h2 class="card__title">Вельветовый пуховик</h2>
+                </a>
+                <div class="card__price">
+                  <p class="card__old-price">7 999 руб.</p>
+                  <p class="card__new-price">1 339 руб.</p>
+                </div>
+                <div class="card__info info">
+                  <div>
+                    <p class="info__title">Размеры в наличии:</p>
+                    <ul class="info__list">
+                      <li class="info__item">S</li>
+                      <li class="info__item">M</li>
+                      <li class="info__item">L</li>
+                      <li class="info__item">XL</li>
+                      <li class="info__item">XXL</li>
+                    </ul>
+                  </div>
+                  <a class="info__button button" href="#">Купить</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__item card">
+              <span class="card__sale">-25%</span>
+              <div class="card__wrap">
+                <a class="card__link-img" href="#">
+                  <picture>
+                    <source srcset="images/catalog3@1x.webp 1x, images/catalog3@2x.webp 2x" type="image/webp" width="332" height="444">
+
+                    <img class="card__image" src="images/catalog3@1x.png" srcset="images/catalog3@2x.png 2x" width="332" height="444" loading="lazy" alt="Вельветовый пуховик">
+                  </picture>
+                </a>
+                <button class="card__button" type="button" aria-label="Добавить в избранное">
+                  <svg class="card__favorite card__favorite--active" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#like-off"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card__wrapper">
+                <a class="card__link-title" href="#">
+                  <h2 class="card__title">Вельветовый пуховик</h2>
+                </a>
+                <div class="card__price">
+                  <p class="card__old-price">7 999 руб.</p>
+                  <p class="card__new-price">1 339 руб.</p>
+                </div>
+                <div class="card__info info">
+                  <div>
+                    <p class="info__title">Размеры в наличии:</p>
+                    <ul class="info__list">
+                      <li class="info__item">S</li>
+                      <li class="info__item">M</li>
+                      <li class="info__item">L</li>
+                      <li class="info__item">XL</li>
+                      <li class="info__item">XXL</li>
+                    </ul>
+                  </div>
+                  <a class="info__button button" href="#">Купить</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__item card">
+              <span class="card__sale">-25%</span>
+              <div class="card__wrap">
+                <a class="card__link-img" href="#">
+                  <picture>
+                    <source srcset="images/catalog4@1x.webp 1x, images/catalog4@2x.webp 2x" type="image/webp" width="332" height="444">
+
+                    <img class="card__image" src="images/catalog4@1x.png" srcset="images/catalog4@2x.png 2x" width="332" height="444" loading="lazy" alt="Вельветовый пуховик">
+                  </picture>
+                </a>
+                <button class="card__button" type="button" aria-label="Добавить в избранное">
+                  <svg class="card__favorite" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#like-off"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card__wrapper">
+                <a class="card__link-title" href="#">
+                  <h2 class="card__title">Вельветовый пуховик в несколько слов&nbsp;для проверки количества</h2>
+                </a>
+                <div class="card__price">
+                  <p class="card__old-price">7 999 руб.</p>
+                  <p class="card__new-price">1 339 руб.</p>
+                </div>
+                <div class="card__info info">
+                  <div>
+                    <p class="info__title">Размеры в наличии:</p>
+                    <ul class="info__list">
+                      <li class="info__item">S</li>
+                      <li class="info__item">M</li>
+                      <li class="info__item">L</li>
+                      <li class="info__item">XL</li>
+                      <li class="info__item">XXL</li>
+                    </ul>
+                  </div>
+                  <a class="info__button button" href="#">Купить</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__item card">
+              <span class="card__sale">-25%</span>
+              <div class="card__wrap">
+                <a class="card__link-img" href="#">
+                  <picture>
+                    <source srcset="images/catalog5@1x.webp 1x, images/catalog5@2x.webp 2x" type="image/webp" width="332" height="444">
+
+                    <img class="card__image" src="images/catalog5@1x.png" srcset="images/catalog5@2x.png 2x" width="332" height="444" loading="lazy" alt="Вельветовый пуховик">
+                  </picture>
+                </a>
+                <button class="card__button" type="button" aria-label="Добавить в избранное">
+                  <svg class="card__favorite" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#like-off"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card__wrapper">
+                <a class="card__link-title" href="#">
+                  <h2 class="card__title">Вельветовый пуховик</h2>
+                </a>
+                <div class="card__price">
+                  <p class="card__old-price">7 999 руб.</p>
+                  <p class="card__new-price">1 339 руб.</p>
+                </div>
+                <div class="card__info info">
+                  <div>
+                    <p class="info__title">Размеры в наличии:</p>
+                    <ul class="info__list">
+                      <li class="info__item">S</li>
+                      <li class="info__item">M</li>
+                      <li class="info__item">L</li>
+                      <li class="info__item">XL</li>
+                      <li class="info__item">XXL</li>
+                    </ul>
+                  </div>
+                  <a class="info__button button" href="#">Купить</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__item card">
+              <span class="card__sale">-25%</span>
+              <div class="card__wrap">
+                <a class="card__link-img" href="#">
+                  <picture>
+                    <source srcset="images/catalog6@1x.webp 1x, images/catalog6@2x.webp 2x" type="image/webp" width="332" height="444">
+
+                    <img class="card__image" src="images/catalog6@1x.png" srcset="images/catalog6@2x.png 2x" width="332" height="444" loading="lazy" alt="Вельветовый пуховик">
+                  </picture>
+                </a>
+                <button class="card__button" type="button" aria-label="Добавить в избранное">
+                  <svg class="card__favorite" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#like-off"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card__wrapper">
+                <a class="card__link-title" href="#">
+                  <h2 class="card__title">Вельветовый пуховик</h2>
+                </a>
+                <div class="card__price">
+                  <p class="card__old-price">7 999 руб.</p>
+                  <p class="card__new-price">1 339 руб.</p>
+                </div>
+                <div class="card__info info">
+                  <div>
+                    <p class="info__title">Размеры в наличии:</p>
+                    <ul class="info__list">
+                      <li class="info__item">S</li>
+                      <li class="info__item">M</li>
+                      <li class="info__item">L</li>
+                      <li class="info__item">XL</li>
+                      <li class="info__item">XXL</li>
+                    </ul>
+                  </div>
+                  <a class="info__button button" href="#">Купить</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__item card">
+              <span class="card__sale">-25%</span>
+              <div class="card__wrap">
+                <a class="card__link-img" href="#">
+                  <picture>
+                    <source srcset="images/catalog7@1x.webp 1x, images/catalog7@2x.webp 2x" type="image/webp" width="332" height="444">
+
+                    <img class="card__image" src="images/catalog7@1x.png" srcset="images/catalog7@2x.png 2x" width="332" height="444" loading="lazy" alt="Вельветовый пуховик">
+                  </picture>
+                </a>
+                <button class="card__button" type="button" aria-label="Добавить в избранное">
+                  <svg class="card__favorite" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#like-off"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card__wrapper">
+                <a class="card__link-title" href="#">
+                  <h2 class="card__title">Вельветовый пуховик</h2>
+                </a>
+                <div class="card__price">
+                  <p class="card__old-price">7 999 руб.</p>
+                  <p class="card__new-price">1 339 руб.</p>
+                </div>
+                <div class="card__info info">
+                  <div>
+                    <p class="info__title">Размеры в наличии:</p>
+                    <ul class="info__list">
+                      <li class="info__item">S</li>
+                      <li class="info__item">M</li>
+                      <li class="info__item">L</li>
+                      <li class="info__item">XL</li>
+                      <li class="info__item">XXL</li>
+                    </ul>
+                  </div>
+                  <a class="info__button button" href="#">Купить</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__item card">
+              <span class="card__sale">-25%</span>
+              <div class="card__wrap">
+                <a class="card__link-img" href="#">
+                  <picture>
+                    <source srcset="images/catalog8@1x.webp 1x, images/catalog8@2x.webp 2x" type="image/webp" width="332" height="444">
+
+                    <img class="card__image" src="images/catalog8@1x.png" srcset="images/catalog8@2x.png 2x" width="332" height="444" loading="lazy" alt="Вельветовый пуховик">
+                  </picture>
+                </a>
+                <button class="card__button" type="button" aria-label="Добавить в избранное">
+                  <svg class="card__favorite" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#like-off"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card__wrapper">
+                <a class="card__link-title" href="#">
+                  <h2 class="card__title">Вельветовый пуховик</h2>
+                </a>
+                <div class="card__price">
+                  <p class="card__old-price">7 999 руб.</p>
+                  <p class="card__new-price">1 339 руб.</p>
+                </div>
+                <div class="card__info info">
+                  <div>
+                    <p class="info__title">Размеры в наличии:</p>
+                    <ul class="info__list">
+                      <li class="info__item">S</li>
+                      <li class="info__item">M</li>
+                      <li class="info__item">L</li>
+                      <li class="info__item">XL</li>
+                      <li class="info__item">XXL</li>
+                    </ul>
+                  </div>
+                  <a class="info__button button" href="#">Купить</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
